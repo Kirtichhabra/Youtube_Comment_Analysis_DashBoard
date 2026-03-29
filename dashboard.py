@@ -9,7 +9,7 @@ st.set_page_config(page_title="YouTube Comments Dashboard", layout="wide")
 @st.cache_data
 def load_and_process_data():
     # 1. Load the CSV file
-    file_path = '/Users/admin/youtube_transacript/commentssummary.csv'
+    file_path = 'commentssummary.csv'
     # Using names since the CSV has a trailing comma causing a 3rd empty column
     df = pd.read_csv(file_path, names=['Raw_Comment', 'VideoID', 'Extra'], header=0)
     
